@@ -6,8 +6,14 @@ btn_atualizar.addEventListener('click', (e) => {
     
     const codUsuario = document.getElementById('codUsuario').value
     const nome = document.getElementById('nome').value
+    const sobrenome = document.getElementById('sobrenome').value
+    const idade = document.getElementById('idade').value
     const email = document.getElementById('email').value
-    const senha = document.getElementById('senha').value
+    const telefone = document.getElementById('telefone').value
+    const endereco = document.getElementById('endereco').value
+    const cidade = document.getElementById('cidade').value
+    const estado = document.getElementById('estado').value
+    
 
     if (!codUsuario) {
         resposta.innerHTML = '<p>Por favor, informe o Código do Usuário!</p>'
