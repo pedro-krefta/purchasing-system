@@ -25,7 +25,7 @@ btn_carga_lote.addEventListener('click', (e) => {
         resposta.innerHTML = '<p style="color: cyan;">Dados recebidos com sucesso! Transmitindo lote para o back-end...</p>'
         
         // 2. Transmite a propriedade nativa array (.products) diretamente para o backend local
-        return fetch('http://localhost:3000/produtos/carga-lote', {
+        return fetch('http://localhost:3000/produto/carga-lote', {
             method: 'POST',
             headers: { 
                 'Content-Type': 'application/json' 
