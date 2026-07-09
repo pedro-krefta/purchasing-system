@@ -18,3 +18,33 @@ btn_listar.addEventListener('click', (e)=>{
         
     })
 })
+
+function criarTbody(dados) {
+    let corpo = ''
+    corpo += `<tbody>`
+    dados.forEach(el => {
+        corpo += `<tr>`
+        corpo += `<td>${el.codUsuario}</td>`
+        corpo += `<td>${el.nome}</td>`
+        corpo += `<td>${el.email}</td>`
+        corpo += `<td>${el.senha}</td>`
+        corpo += `</tr>`
+    })
+    corpo += `</tbody>`
+    return corpo
+}
+
+function criarThead() {
+    let cabecalho = ''
+    cabecalho += `
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Senha</th>
+            </tr>
+        </thead>
+    `
+    return cabecalho
+}
