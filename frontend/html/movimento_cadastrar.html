@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/compras_cadastrar.js"defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">Home</a>
+        <span class="titulo_menu">Compras</span>&emsp;
+        <a href="./movimento_cadastrar.html">Cadastrar Movimento</a>&emsp;
+            <a href="./movimento_listar.html">Listar Movimento</a>&emsp;
+            <a href="./mov_categoria_listar.html">Listar Por Categoria</a>&emsp;
+            <a href="./mov_historico_saida.html">Listar Histórico Saídas</a>
+    </nav>
+    <form>
+        <label for="idUsuario">digite o id do usuario</label><br>
+        <input type="number" id="idUsuario"><br>
+
+        <label for="idProduto">digite o id produto</label><br>
+        <input type="number" id="idProduto"><br>
+
+        <label for="tipoMovimento">digite o tipo de movimentação('ENTRADA','SAIDA')</label><br>
+        <input type="tipoMovimento" id="tipoMovimento"><br>
+
+        <label for="quantidadeMovimentada">digite a quantidade movimentada</label><br>
+        <input type="number" id="quantidadeMovimentada"><br>
+
+        <label for="precoUnitario">digte o preço unitario</label><br>
+        <input type="number" id="precoUnitario"><br>
+
+        <label for="formaPagamento">digite a forma de pagamento('DEBITO', 'CREDITO', 'DINHEIRO')</label><br>
+        <input type="text" id="formaPagamento"><br>
+
+        <label for="statusCompra">digite o status da compra</label><br>
+        <input type="text" id="statusCompra"><br>
+
+        <label for="dataCompra">digite a data da compra</label><br>
+        <input type="text" id="dataCompra"><br><br>
+        
+        <button id="btn_cadastrar">Cadastrar</button><br><br>
+        <div id="resposta"></div>
+    </form>
+</body>
+</html>

@@ -22,8 +22,13 @@ btn_atualizar.addEventListener('click', (e) => {
 
     const usuarioAtualizado = {
         nome: nome,
+        sobrenome: sobrenome,
         email: email,
-        senha: senha
+        idade: idade,
+        telefone: telefone,
+        endereco: endereco,
+        cidade: cidade,
+        estado: estado
     }
 
     fetch(`http://localhost:3000/usuario/${codUsuario}`, {
@@ -65,8 +70,13 @@ function criarTbody(dados) {
         corpo += `<tr>`
         corpo += `<td>${el.codUsuario}</td>`
         corpo += `<td>${el.nome}</td>`
+        corpo += `<td>${el.sobrenome}</td>`
+        corpo += `<td>${el.idade}</td>`
         corpo += `<td>${el.email}</td>`
-        corpo += `<td>${el.senha}</td>`
+        corpo += `<td>${el.telefone}</td>`
+        corpo += `<td>${el.endereco}</td>`
+        corpo += `<td>${el.cidade}</td>`
+        corpo += `<td>${el.estado}</td>`
         corpo += `</tr>`
     })
     corpo += `</tbody>`
@@ -80,9 +90,14 @@ function criarThead() {
             <tr>
                 <th>Código</th>
                 <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>Idade</th>
                 <th>Email</th>
-                <th>Senha</th>
-            </tr>
+                <th>Telefone</th>
+                <th>Endereco</th>
+                <th>Cidade</th>
+                <th>Estado</th>
+                </tr>
         </thead>
     `
     return cabecalho

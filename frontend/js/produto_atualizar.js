@@ -7,7 +7,6 @@ btn_atualizar.addEventListener('click', (e) => {
     const codProduto = document.getElementById('codProduto').value
     const nome = document.getElementById('nome').value
     const categoria = document.getElementById('categoria').value
-    const desconto = document.getElementById('desconto').value
     const qtdeEstoque = document.getElementById('qtdeEstoque').value
     const preco = document.getElementById('preco').value
 
@@ -19,7 +18,6 @@ btn_atualizar.addEventListener('click', (e) => {
     const produtoAtualizado = {
         nome: nome,
         categoria: categoria,
-        desconto: desconto,
         qtdeEstoque: qtdeEstoque,
         preco: preco
     }

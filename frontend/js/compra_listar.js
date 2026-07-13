@@ -4,7 +4,7 @@ let btn_listar = document.getElementById('btn_listar')
 btn_listar.addEventListener('click', (e) => {
     e.preventDefault()
 
-    fetch('http://localhost:3000/movimentos')
+    fetch('http://localhost:3000/compras')
     .then(res => res.json())
     .then(dados => {
         resposta.innerHTML = ''
@@ -25,12 +25,14 @@ function criarTbody(dados) {
     corpo += `<tbody>`
     dados.forEach(el => {
         corpo += `<tr>`
-        corpo += `<td>${el.codMovimento}</td>`
+        corpo += `<td>${el.codCompra}</td>`
         corpo += `<td>${el.idUsuario}</td>`
         corpo += `<td>${el.idProduto}</td>`
-        corpo += `<td>${el.tipo}</td>`
-        corpo += `<td>${el.qtdeMov}</td>`
-        corpo += `<td>${el.data}</td>`
+        corpo += `<td>${el.tipoMovimento}</td>`
+        corpo += `<td>${el.precoUnitario}</td>`
+        corpo += `<td>${el.formaPagamento}</td>`
+        corpo += `<td>${el.statusCompra}</td>`
+        corpo += `<td>${el.dataCompra}</td>`
         corpo += `</tr>`
     })
     corpo += `</tbody>`
@@ -46,6 +48,8 @@ function criarThead() {
                 <th>Cód. Produto</th>
                 <th>Tipo</th>
                 <th>Qtd. Movimentada</th>
+                <th>Forma pagamento</th>
+                <th>Status</th>
                 <th>Data</th>
             </tr>
         </thead>

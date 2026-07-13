@@ -25,7 +25,7 @@ btn_carga_lote.addEventListener('click', (e) => {
         resposta.innerHTML = '<p style="color: cyan;">Dados recebidos com sucesso! Transmitindo lote para o back-end...</p>'
         
         // 2. Repassa o array bruto (.users) diretamente ao endpoint de carga em lote
-        return fetch('http://localhost:3000/usuarios/carga-lote', {
+        return fetch('http://localhost:3000/usuario/carga-lote', {
             method: 'POST',
             headers: { 
                 'Content-Type': 'application/json' 

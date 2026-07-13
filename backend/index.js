@@ -34,7 +34,7 @@ app.put('/produto/:id', produtoController.atualizar)
 
 
 app.post('/compra', compraController.cadastrar)
-app.post('/compras', compraController.listar)
+app.get('/compras', compraController.listar)
 
 
 app.get('/relatorio/produtos-criticos', relatVwController.listarHistoricoSaidas)

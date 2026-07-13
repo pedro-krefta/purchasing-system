@@ -20,7 +20,7 @@ gerar_grafico.addEventListener('click', () => {
         
         dados.sort((a, b) => {
             let valorA = parseFloat(a.valor_financeiro_movimentado || 0)
-            let valorB = parseFloat(b.valor_financeiro_movimentado || 0)
+            let valorB = parseFloat(b.valor_financeiro_movimentado || 0)    
             return valorB - valorA
         })
 
